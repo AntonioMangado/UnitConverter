@@ -1,0 +1,33 @@
+select#unit-selector {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: white 2px solid;
+
+    width: 218px;
+
+    option {
+        background-color: transparent;
+        color: black;
+    }
+}
+
+#switch-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: -9px;
+
+    :active {
+        transform: translateY(2px);
+    }
+    
+
+    img {
+        width: 30px;
+    }
+}
