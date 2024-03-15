@@ -1,7 +1,12 @@
 import React from "react";
 
 const QuantityInput = () => {
-  return <div>QuantityInput</div>;
+  return (
+    <div>
+      <input type="number" name="" id="" />
+      <span id="measurement-unit">km</span>
+    </div>
+  );
 };
 
 export default QuantityInput;
