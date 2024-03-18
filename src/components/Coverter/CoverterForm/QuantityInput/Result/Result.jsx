@@ -1,10 +1,10 @@
 import React from "react";
 
-const Result = () => {
+const Result = ({ outputUnit, outputQuantity }) => {
   return (
   <div id="result-container">
-    <span id="result-number">62.12</span>
-    <span id="result-unit">miles</span>
+    <span id="result-number">{outputQuantity.toFixed(2)}</span>
+    <span id="result-unit">{outputUnit}</span>
   </div>
   );
 };

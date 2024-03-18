@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const QuantityInput = () => {
+const QuantityInput = ({ inputUnit, setInputQuantity }) => {
+
   return (
     <div>
-      <input type="number" name="" id="" />
-      <span id="measurement-unit">km</span>
+      <input type="number" name="quantity" id="quantity" onChange={(e) => {setInputQuantity(e.target.value)}} autoComplete="off"/>
+      <span id="measurement-unit">{inputUnit}</span>
     </div>
   );
 };
