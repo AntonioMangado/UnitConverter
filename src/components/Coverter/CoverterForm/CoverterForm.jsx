@@ -21,7 +21,7 @@ const CoverterForm = () => {
     <article id="converter-container">
       <p>convert</p>
       <div id="unit-and-input">
-        <UnitSelector setInputUnit={setInputUnit} setOutputUnit={setOutputUnit} setArrayPosition={setArrayPosition} arrayPosition={arrayPosition}/>
+        <UnitSelector setInputUnit={setInputUnit} setOutputUnit={setOutputUnit} setArrayPosition={setArrayPosition}/>
         <QuantityInput inputUnit={inputUnit} setInputQuantity={setInputQuantity}/>
       </div>
       <div id="fav-and-result">

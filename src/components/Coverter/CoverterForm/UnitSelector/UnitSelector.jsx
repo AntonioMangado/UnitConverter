@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SwitchBtn from "../../../../assets/exchange-logo-white.png"
 
-const UnitSelector = ({ setInputUnit, setOutputUnit, setArrayPosition, arrayPosition }) => {
+const UnitSelector = ({ setInputUnit, setOutputUnit, setArrayPosition }) => {
 
   const [value, setValue] = useState("kms-miles-0");
-  const [arrayDif, setArrayDif] = useState(0);
 
   useEffect(() => {
     setInputUnit(value.split("-")[0]);
