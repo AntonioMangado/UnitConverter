@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addConvertion, removeConvertion } from "../../../redux/slices/SavedConvertionsSlice";
+import { addConvertion } from "../../../redux/slices/SavedConvertionsSlice";
 import UnitSelector from "./UnitSelector";
 import QuantityInput from "./QuantityInput";
 import FavButton from "./FavButton";
