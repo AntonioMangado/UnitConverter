@@ -10,18 +10,18 @@ const SavedConvertions = () => {
   const printCards = () => {
     return savedConvertions.map((convertion, i) => {
       return (
-        <div key={convertion.id} className="saved-convertion-card">
+        <article key={convertion.id} className="saved-convertion-card">
           <p>{convertion.inputQuantity} {convertion.inputUnit} → {(convertion.outputQuantity).toFixed(2)} {convertion.outputUnit}</p>
           <button onClick={() => dispatch(removeConvertion(convertion.id))}>X</button>
-        </div>
+        </article>
       );
     });
   };
   
   return (
     <section id="saved-convertions-container">
-      {savedConvertions.length > 0 ? <p className="saved-title">saved</p> : ""}
-      <div>
+      {savedConvertions.length > 0 ? <p id="saved-title">saved</p> : ""}
+      <div id="card-container">
         {printCards()}
       </div>
     </section>

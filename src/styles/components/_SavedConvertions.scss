@@ -1,0 +1,39 @@
+section#saved-convertions-container {
+    max-width: 720px;
+    margin: 86px auto;
+}
+
+p#saved-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+div#card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+article.saved-convertion-card {
+    background-color: #e3e3e3;
+    height: 38px;
+    min-width: 260px;
+    max-width: 349px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    border-radius: 10px;
+    flex-grow: 1;
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+}
