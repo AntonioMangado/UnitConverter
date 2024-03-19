@@ -1,8 +1,8 @@
 import React from "react";
 import HeartIcon from "../../../icons/HeartIcon/HeartIcon";
 
-const FavButton = () => {
-  return <button className="fav-button">
+const FavButton = ({ addConvertion }) => {
+  return <button className="fav-button" onClick={addConvertion}>
           <HeartIcon />
         </button>;
 };
