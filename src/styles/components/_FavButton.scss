@@ -1,0 +1,9 @@
+button.fav-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
