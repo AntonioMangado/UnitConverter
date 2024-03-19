@@ -1,4 +1,10 @@
 section#converter-convertions-container {
     padding: 0 20px;
-    min-height: calc(100vh - 20vh);
+    margin: 51px auto 20px;
+    min-height: 100%;
+
+    width: 100%;
+    flex-grow: 1;
 }
+
+
