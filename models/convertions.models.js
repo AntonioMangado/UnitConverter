@@ -7,7 +7,7 @@ const objectSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    inputValue: {
+    inputQuantity: {
         type: Number,
         required: true
     },
@@ -15,7 +15,7 @@ const objectSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    outputValue: {
+    outputQuantity: {
         type: Number,
         required: true
     },
