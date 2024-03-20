@@ -15,7 +15,7 @@ const CoverterForm = () => {
   const [inputUnit, setInputUnit] = useState("kms");
   const [outputUnit, setOutputUnit] = useState("miles");
   const [arrayPosition, setArrayPosition] = useState(0);
-  const [inputQuantity, setInputQuantity] = useState(0);
+  const [inputQuantity, setInputQuantity] = useState("");
   const [outputQuantity, setOutputQuantity] = useState(0);
 
   const addConvertionToStore = () => {
