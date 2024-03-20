@@ -27,6 +27,8 @@ const CoverterForm = () => {
       id: Date.now(),
     };
     dispatch(addConvertion(convertion));
+    setInputQuantity("");
+    setOutputQuantity(0);
   }
   
 
@@ -39,7 +41,7 @@ const CoverterForm = () => {
       <p>convert</p>
       <div id="unit-and-input">
         <UnitSelector setInputUnit={setInputUnit} setOutputUnit={setOutputUnit} setArrayPosition={setArrayPosition}/>
-        <QuantityInput inputUnit={inputUnit} setInputQuantity={setInputQuantity}/>
+        <QuantityInput inputUnit={inputUnit} setInputQuantity={setInputQuantity} inputQuantity={inputQuantity}/>
       </div>
       <div id="fav-and-result">
         <FavButton addConvertion={addConvertionToStore}/>
