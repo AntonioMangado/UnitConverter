@@ -1,0 +1,16 @@
+input[type="number"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-right: 9px;
+    width: 221px;
+
+    &:focus {
+        outline: none;
+    }   
+}
+
+#measurement-unit {
+    font-size: 14px
+}

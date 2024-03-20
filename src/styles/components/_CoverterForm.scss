@@ -1,0 +1,53 @@
+article#converter-container {
+    max-width: 717px;
+    min-height: 193px;
+    border-radius: 21px;
+    margin: 0 auto;
+    padding: 24px 38px;
+
+    background-color: #2e0039;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        align-items: flex-end;
+    }
+}
+
+
+@media screen and (max-width: 655px) {
+
+    section#converter-convertions-container {
+        max-width: 351px;
+        margin: 0 auto;
+
+        article#converter-container {
+            margin: 25px auto;
+            padding: 11px 21px;
+            gap: 19px;
+        }
+    }
+
+    div#unit-and-input {
+        flex-direction: column;
+        gap: 19px;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    section#saved-convertions-container {
+        margin: 20px auto 30px !important;
+    }
+}
